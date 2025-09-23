@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Links</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background-color: #000; /* base color */
+      background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      background-size: 20px 20px; /* grid spacing */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body class="p-6">
+
+  <!-- Title -->
+  <h1 class="text-3xl font-bold mb-6">🌐 My Links</h1>
+
+  <!-- Links -->
+  <div class="flex flex-col gap-4 w-full max-w-sm">
+
+    <!-- Discord Link -->
+    <a href="https://discord.gg/YOUR_INVITE" target="_blank" 
+       class="bg-[#5865F2] hover:bg-[#4752C4] text-white text-center py-3 rounded-2xl shadow-lg font-medium">
+       Join my Discord
+    </a>
+
+    <!-- Blank Link 1 -->
+    <a href="#" target="_blank" 
+       class="bg-gray-700 hover:bg-gray-600 text-white text-center py-3 rounded-2xl shadow-lg font-medium">
+       Another Link
+    </a>
+
+    <!-- Blank Link 2 -->
+    <a href="#" target="_blank" 
+       class="bg-gray-700 hover:bg-gray-600 text-white text-center py-3 rounded-2xl shadow-lg font-medium">
+       Another Link
+    </a>
+
+  </div>
+
+</body>
+</html>
