@@ -20,38 +20,42 @@
       font-family: sans-serif;
     }
     img.icon {
-      width: 24px;
-      height: 24px;
-      object-fit: contain;
+      width: 32px; /* bigger & consistent */
+      height: 32px;
+      object-fit: cover;
+      border-radius: 6px; /* optional rounded corners */
     }
   </style>
 </head>
 <body class="p-6">
 
   <!-- Title -->
-  <h1 class="text-3xl font-bold mb-6">🌐 My Links</h1>
+  <h1 class="text-3xl font-bold mb-6 flex items-center gap-2">
+    🌐 My Links
+  </h1>
 
   <!-- Links -->
   <div class="flex flex-col gap-4 w-full max-w-sm">
 
     <!-- Discord Link -->
     <a href="https://discord.gg/j4wd2xcrtj" target="_blank" 
-       class="flex items-center gap-3 bg-[#5865F2] hover:bg-[#4752C4] text-white py-3 px-4 rounded-2xl shadow-lg font-medium">
+       class="flex items-center gap-3 bg-[#5865F2] hover:bg-[#4752C4] text-white py-4 px-5 rounded-2xl shadow-lg font-medium transition">
        <img src="https://cdn.discordapp.com/attachments/1289428457968631860/1420330014578180168/Screenshot_2025-09-21-20-07-46-514_com.discord.png?ex=68d500e7&is=68d3af67&hm=2490163600ba97fe740fdc606fcec7ec70763a67ffc5bbb8b36c4ec2f7280e19&" class="icon" alt="Discord">
-       <span>Roblox Condo Games</span>
+       <span>Roblox Condo Games Server</span>
     </a>
 
-    <!-- Blank Link 1 -->
+    <!-- Roblox Link -->
     <a href="https://roblox.com.ge/users/6230763858/profile" target="_blank" 
-       class="flex items-center gap-3 bg-gray-700 hover:bg-gray-600 text-white py-3 px-4 rounded-2xl shadow-lg font-medium">
+       class="flex items-center gap-3 bg-gray-700 hover:bg-gray-600 text-white py-4 px-5 rounded-2xl shadow-lg font-medium transition">
+       <img src="https://tr.rbxcdn.com/fb41dc21d46b3a86347c42894c144a85/150/150/AvatarHeadshot/Png" class="icon" alt="Roblox">
        <span>My Roblox Profile</span>
     </a>
 
-    <!-- Blank Link 2 -->
+    <!-- Extra Link Placeholder -->
     <a href="#" target="_blank" 
-       class="flex items-center gap-3 bg-gray-700 hover:bg-gray-600 text-white py-3 px-4 rounded-2xl shadow-lg font-medium">
-  
-       <span></span>
+       class="flex items-center gap-3 bg-gray-700 hover:bg-gray-600 text-white py-4 px-5 rounded-2xl shadow-lg font-medium transition">
+       <img src="https://via.placeholder.com/150" class="icon" alt="Placeholder">
+       <span>Another Link</span>
     </a>
 
   </div>
